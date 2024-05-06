@@ -1,0 +1,346 @@
+
+
+.maincontainer{
+  position: relative;
+  width: 100vw;
+}
+
+/* Notification */
+.container{
+  padding: 10px 0;
+  /* border: 1px solid maroon; */
+  height: 100vh;
+  /* position: relative; */
+}
+.navigation, .accountName, .balance, .servicesContainer, .transactions{
+  width: 60%;
+  margin: auto;
+}
+
+.navigation{
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  width: 60%;
+  margin: auto;
+  z-index: 1001;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.navigation, .navlinksCon, .navlinks, .navlink, .profile{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+
+.navlinksCon{
+  gap: 20px;
+}
+.navlinksCon img{
+  cursor: pointer;
+}
+.navlink:hover{
+  color: #D17528;
+}
+
+.notification,.profileDropdown{
+  width: 340px;
+  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(3.9%, 3.9%);
+  z-index: 1000;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 5px gray;
+}
+
+.notificationContainer {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 9px;
+  line-height: 11.3px;
+  padding: 5px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 5px;
+}
+
+.notImage{
+  padding: 3px;
+  background-color: #D17528;
+  border-radius: 50%;
+}
+
+
+.notification h1{
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.57px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.notificationCol{
+  position: relative;
+  /* height: 100px; */
+  overflow-wrap: normal;
+  /* background-color: gray; */
+}
+
+.notificationContent{
+  display: flex;
+  align-items: center;
+  font-size: 9px;
+  line-height: 11.3px;
+}
+.notificationBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notificationBtn button{
+  padding: 1px 15px;
+  color: white; 
+  background-color: #D17528;
+  border: none;
+  border-radius: 100px;
+  font-size: 8px;
+  line-height: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.profileDropdown{
+  width: 148px;
+  height: 193px;
+  position: absolute;
+  top: 50%;
+  left: 78%;
+  transform: translate(20%, 10%);
+  padding: 20px;
+  font-size: 13px;
+  line-height: 16.32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profileDropdownContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 13px;
+  padding: 8px, 0px,;
+  cursor: pointer;
+}
+.profileDropdownImage{
+  background-color: #D17528;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+
+.navlink, .profile{
+  gap: 12px;
+  color: #838581;
+  font-size: 12px;
+}
+
+
+.profile{
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  line-height: 16.94px;
+}
+
+
+/* Account Name */
+
+.accountName{
+  padding: 20px 0;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nameCol h2{
+  font-size: 20px;
+  color: gray;
+  font-weight: 600;
+  line-height: 24.2px;
+}
+.nameCol h1{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.73px;
+}
+
+/* Balance */
+
+.balance{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainBalance p, .mainBalance p span{
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12.1px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  text-transform: uppercase;
+}
+.mainBalance p{
+  gap: 5px;
+}
+.mainBalance h1{
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  line-height: 42.35px;
+  font-weight: 800;
+}
+
+.mainBalance p span{
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.topUp{
+  margin-top: 10px;
+  font-size: 8px;
+  gap: 11px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D17528;
+  border-radius: 10px;
+}
+
+
+/* Services */
+
+.servicesContainer{
+  margin-top: 50px;
+  color: gray;
+  font-weight: 600;
+  line-height: 14.52px;
+}
+.servicesContainer h1{
+  font-size: 12px;
+}
+
+.servicesCol{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.services{
+  cursor: pointer;
+  font-size: 8px;
+  width: 90px;
+  padding: 15px 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D17528;
+  border-radius: 10px;
+}
+
+/* Transaction */
+
+
+.transactionsHeader{
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+.transactionsHeader a{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.transactions h1, .transactions a{
+  font-size: 12px;
+  line-height: 14.52px;
+  font-weight: 600;
+  color: gray;
+}
+
+
+.transactionsCol, .detailCol{
+  background-color: #D17528;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.transactiondetails{
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detailCol{
+  color: #838581;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 14.52px;
+  font-weight: 600;
+}
+
+.status{
+  color: green;
+}
+
+.amount{
+  display: flex;
+  align-items: center;
+}
+
+.transactionBtns{
+  display: flex;
+  gap: 12px;
+  padding-bottom: 50px;
+}
+
+.transactionBtns button{
+  font-size: 12px;
+  padding: 13px, 40px, 13px, 40px;
+  line-height: 22px;
+  width: 104px;
+  height: 35px;
+  background-color: #D17528;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
