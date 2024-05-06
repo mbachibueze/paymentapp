@@ -30,7 +30,7 @@ export default function Home() {
             <h1>Samuel Ayano</h1>
           </div>
           <div className={styles.nameIcon}>
-            <Image
+            <Image className={styles.nameIconImage}
               src="/images/nameIcon.svg"
               width={253}
               height={144}/>

@@ -1,20 +1,13 @@
 
-
-.maincontainer{
-  position: relative;
-  width: 100vw;
-}
-
-/* Notification */
-.container{
-  padding: 10px 0;
-  /* border: 1px solid maroon; */
-  height: 100vh;
-  /* position: relative; */
-}
-.navigation, .accountName, .balance, .servicesContainer, .transactions{
+.navigation{
   width: 60%;
   margin: auto;
+}
+
+.navigationContainer{
+  position: fixed;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
 }
 
 .navigation{
@@ -24,7 +17,6 @@
   width: 60%;
   margin: auto;
   z-index: 1001;
-  background-color: rgb(255, 255, 255);
 }
 
 
@@ -42,6 +34,26 @@
 .navlinksCon img{
   cursor: pointer;
 }
+
+@media(max-width:900px){
+  .navlinksCon{
+    display: none;
+  }
+  .navigation{
+    padding: 10px 5px;
+  }
+}
+
+@media(max-width:450px){
+  .navlinksCon{
+    display: none;
+  }
+  .navigation{
+    width: 95%;
+    padding: 10px 5px;
+  }
+}
+
 .navlink:hover{
   color: #D17528;
 }
@@ -167,5 +179,30 @@
 }
 
 
-/* Account Name */
+/* ToggleBtn */
+.toggleBtn{
+  display: none;
+}
+
+.toggleBtn{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width: 900px){
+  .toggleBtn .profile{
+    margin-top: -4px;
+    padding: 0;
+  }
+  .toggleBtn{
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+}
+
+
 
