@@ -98,7 +98,7 @@
 }
 
 .networks{
-  /* display: none; */
+  display: none;
   position: absolute;
   width: 100%;
   z-index: 1000;
@@ -138,10 +138,21 @@
   font-weight: 600;
   margin-top: 3px;
 }
+
+@media(max-width:450px){
+  .network p, .number p{
+    font-size: 11px;
+  }
+
+}
 #amount{
+  display: flex;
   justify-content: left;
   align-items: center;
-  gap: 8px;
+  gap: 2px;
+}
+#amount p{
+  margin-top: 2px;
 }
 
 
