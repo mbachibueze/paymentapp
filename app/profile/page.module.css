@@ -98,3 +98,8 @@
 .saveBtn:active{
   opacity: 100%;
 }
+@media(max-width:450px){
+  .saveBtn{
+    padding: 10px 0;
+  }
+}

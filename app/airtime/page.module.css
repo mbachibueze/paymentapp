@@ -1,0 +1,182 @@
+.mainContainer{
+  width: 60%;
+  margin: auto;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  padding: 20px;
+}
+
+
+.back{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 20px 0;
+}
+
+.back p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.38px;
+  color: #111111;
+}
+
+.airtime{
+  padding: 40px;
+  box-shadow: 0 0 5px gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  text-align: center;
+}
+
+.header{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: -1%;
+  text-align: left;
+}
+
+.airtimeImg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: gray;
+  font-size: 11px;
+  line-height: 13.31px;
+}
+.image{
+  background-color: #D17528;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+  text-align: center;
+}
+.airtimeImg p{
+  cursor: pointer;
+}
+
+
+.networkContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.network{
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: 352px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+@media(max-width:450px){
+  .network{
+    width: 65vw;
+  }
+}
+.network p{
+  font-size:14px;
+  color: gray;
+}
+
+.networks{
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -21%);
+  box-shadow: 0 0 5px gray;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.networks p{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.57px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding: 5px;
+}
+
+.number{
+  color: #D17528;
+  display: flex;
+  align-items: center;
+  justify-content: centera;
+
+}
+.number p{
+  color: #D17528;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14.52px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+#amount{
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+@media(max-width:450px){
+  .profile{
+    padding: 30px;
+  }
+  .profileDetails{
+    font-size: 10px;
+    gap: 60px;
+  }
+}
+
+.detailMain{
+  color: gray;
+}
+
+.saveBtn{
+  background-color: #D17528;
+  padding: 13px 0;
+  border-radius: 100px;
+  color: white;
+  opacity: 50%;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.saveBtn:active{
+  opacity: 100%;
+}
+@media(max-width:450px){
+  .saveBtn{
+    padding: 10px 0;
+  }
+}
