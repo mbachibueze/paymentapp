@@ -13,7 +13,7 @@ import {useState, useEffect} from 'react'
 
 const DashboardNav = () =>{
 
-  const position = window.scrollY;
+  // const position = window.scrollY;
   const [isVisible, setIsVisible] = useState(false);
   const [isNotificationVisible, setNotificationVisible] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);

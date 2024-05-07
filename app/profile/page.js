@@ -23,10 +23,22 @@ export default function Home() {
                 <Image src="/profile/profileIcon.svg" width={60} height={60}/>
                 <p>Edit profile pic</p>
             </div>
-            <div className={styles.profileContent}>
+            <div className={styles.profileContent}> 
               <div className={styles.profileDetails}>
-                <p className={styles.detailMain}>User ID</p>
+                <p className={styles.detailMain}>User ID:</p>
                 <p className={styles.detailContent}>574dgbq743o2cJ</p>
+              </div>
+              <div className={styles.profileDetails}>
+                <p className={styles.detailMain}>Name:</p>
+                <p className={styles.detailContent}>Samuel Ayano</p>
+              </div>
+              <div className={styles.profileDetails}>
+                <p className={styles.detailMain}>Email:</p>
+                <p className={styles.detailContent}>samuelayano7@gmail.com</p>
+              </div>
+              <div className={styles.profileDetails}>
+                <p className={styles.detailMain}>Phone Number:</p>
+                <p className={styles.detailContent}>08167579409</p>
               </div>
             </div>
             <div className={styles.saveBtn}>
