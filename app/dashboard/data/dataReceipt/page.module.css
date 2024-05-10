@@ -1,0 +1,152 @@
+.mainContainer{
+  width: 70%;
+  margin: auto;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  padding: 20px;
+}
+
+
+.back{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 20px 0;
+}
+
+.back p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.38px;
+  color: #111111;
+}
+
+.profile{
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+}
+
+.header{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: -1%;
+  text-align: left;
+}
+
+.profileImg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+.profileImg p{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.59px;
+  cursor: pointer;
+  color: black;
+}
+
+.profileContent{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #F4F4F6;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.purchaseDetails{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media(max-width:550px){
+  .purchaseDetails{
+    font-size: 10px;
+  }
+  .mainContainer{
+    width: 100%;
+  }
+  .profileImg p{
+    padding: 0 25px;
+  }
+}
+
+.profileDetails{
+  font-size: 14px;
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}
+@media(max-width:450px){
+  .profile{
+    padding: 30px;
+  }
+  .profileDetails{
+    font-size: 10px;
+    gap: 60px;
+  }
+  .profile{
+    gap: 40px;
+  }
+}
+
+.detailMain{
+  color: gray;
+}
+
+.detailContent{
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+
+.downloadBtn{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #D17528;
+  border: 1px solid #D17528;
+  border-radius: 100px;
+  padding: 3px 0;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  justify-content: center;
+}
+
+.saveBtn{
+  background-color: #D17528;
+  padding: 10px 0;
+  border-radius: 100px;
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+@media(max-width:450px){
+  .saveBtn{
+    padding: 10px 0;
+  }
+}

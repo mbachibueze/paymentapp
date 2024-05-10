@@ -55,6 +55,7 @@
   font-size: 11px;
   line-height: 13.31px;
 }
+
 .image{
   background-color: #D17528;
   width: 44px;
@@ -67,6 +68,8 @@
 }
 .airtimeImg p{
   cursor: pointer;
+  color: black;
+  font-weight: 600;
 }
 
 
@@ -98,8 +101,10 @@
 }
 
 .networks{
-  display: none;
   position: absolute;
+  height: 190px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
   width: 100%;
   z-index: 1000;
   top: 50%;
@@ -110,8 +115,19 @@
   padding: 10px;
   background-color: white;
 }
+.networks::-webkit-scrollbar{
+  height: 0px;
+}
+/*  .servicesCol{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  .servicesCol::-webkit-scrollbar{
+    width: 10px;
+  } */
 
 .networks p{
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 11px;
@@ -131,6 +147,7 @@
 
 }
 .number p{
+  cursor: pointer;
   color: #D17528;
   text-transform: uppercase;
   font-size: 12px;
@@ -139,12 +156,6 @@
   margin-top: 3px;
 }
 
-@media(max-width:450px){
-  .network p, .number p{
-    font-size: 11px;
-  }
-
-}
 #amount{
   display: flex;
   justify-content: left;
@@ -154,17 +165,75 @@
 #amount p{
   margin-top: 2px;
 }
+.network input{
+  width: 100%;
+  padding-top: 2px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.network input[type=number]::-webkit-inner-spin-button,
+.network input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.selectBundle{
+  position: absolute;
+  height: 190px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 7%);
+  box-shadow: 0 0 5px gray;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+}
+.selectBundle p{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.57px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding: 5px;
+}
+.selectBundle::-webkit-scrollbar{
+  height: 0px;
+}
 
 
 
 @media(max-width:450px){
-  .profile{
+  .network p, .number p, .network input{
+    font-size: 11px;
+  }
+
+}
+
+
+@media(max-width:450px){
+  .airtime{
     padding: 30px;
   }
   .profileDetails{
     font-size: 10px;
     gap: 60px;
   }
+}
+
+
+.bundleAmount{
+  gap: 1px;
+  font-weight: 600;
 }
 
 .detailMain{
@@ -181,7 +250,7 @@
   line-height: 22px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 0.1s;
 }
 .saveBtn:active{
   opacity: 100%;
