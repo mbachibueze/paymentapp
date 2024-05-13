@@ -82,6 +82,7 @@
   border: 1px solid gray;
   border-radius: 8px;
   width: 352px;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +104,7 @@
   overflow-y: auto;
   scroll-behavior: smooth;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -21%);

@@ -17,13 +17,13 @@ export default function Home() {
           <div className={styles.profile}>
             <div className={styles.profileImg}>
                 <Image src="/images/receiptIcon.svg" width={121} height={121}/>
-                <p>Data Purchase Successful</p>
+                <p>Airtime Purchase Successful</p>
             </div>
             <div className={styles.profileContent}>
-              <div className={styles.purchaseDetails}>
+                <div className={styles.purchaseDetails}>
                   <div className={styles.profileDetails}>
                     <p className={styles.detailMain}>Description:</p>
-                    <p className={styles.detailContent}>Data purchase</p>
+                    <p className={styles.detailContent}>Airtime purchase</p>
                   </div>
                   <div className={styles.profileDetails}>
                     <p className={styles.detailMain}>To:</p>
@@ -31,15 +31,15 @@ export default function Home() {
                   </div>
                   <div className={styles.profileDetails}>
                     <p className={styles.detailMain}>Network:</p>
-                    <p className={styles.detailContent}>MTN-NG</p>
+                    <p className={styles.detailContent}>9MOBILE-NG</p>
                   </div>
                   <div className={styles.profileDetails}>
                     <p className={styles.detailMain}>Charges:</p>
                     <p className={styles.detailContent}><FaNairaSign />0.00</p>
                   </div>
                   <div className={styles.profileDetails}>
-                    <p className={styles.detailMain}>Bundle:</p>
-                    <p className={styles.detailContent}> 1GB 7days for   <FaNairaSign />600</p>
+                    <p className={styles.detailMain}>Total Amount:</p>
+                    <p className={styles.detailContent}><FaNairaSign />2,000.00</p>
                   </div>
                 </div>
                 <div className={styles.downloadBtn}>

@@ -6,8 +6,7 @@ export default function Sample({children}) {
     <div className={styles.container}>
       </div>
         <div className={styles.transaction}>
-          
-{children}
+            {children}
         </div>
     </>
   )

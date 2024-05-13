@@ -209,6 +209,7 @@ const DashboardNav = () =>{
 
             <div className={styles.toggleBtn}>
 
+              
               <div onClick={openNotification} >
                   <Image
                     src="/images/bell.svg"
@@ -216,6 +217,73 @@ const DashboardNav = () =>{
                     height={20}
                     />
               </div>
+              {
+                isNotificationVisible && (
+                  <div className={styles.notification}>
+                    <h1>Notifications</h1>
+                    <div className={styles.notificationCol}>
+                      <div className={styles.notificationContainer}>
+                        <div className={styles.notImage}>
+                          <Image 
+                            src="/images/services/phone.svg"
+                            width={15}
+                            height={15}
+                            />
+                        </div>
+                        <div className={styles.notificationContent}>Airtime purchase of ₦1,000 successfull</div>
+                        <div>Nov 20, 2023 8:55Am</div>
+                      </div>
+                      <div className={styles.notificationContainer}>
+                        <div className={styles.notImage}>
+                          <Image 
+                            src="/images/services/phone.svg"
+                            width={15}
+                            height={15}
+                            />
+                        </div>
+                        <div className={styles.notificationContent}>Airtime purchase of ₦1,000 successfull</div>
+                        <div>Nov 20, 2023 8:55Am</div>
+                      </div>
+                      <div className={styles.notificationContainer}>
+                        <div className={styles.notImage}>
+                          <Image 
+                            src="/images/services/phone.svg"
+                            width={15}
+                            height={15}
+                            />
+                        </div>
+                        <div className={styles.notificationContent}>Airtime purchase of ₦1,000 successfull</div>
+                        <div>Nov 20, 2023 8:55Am</div>
+                      </div>
+                      <div className={styles.notificationContainer}>
+                        <div className={styles.notImage}>
+                          <Image 
+                            src="/images/services/phone.svg"
+                            width={15}
+                            height={15}
+                            />
+                        </div>
+                        <div className={styles.notificationContent}>Airtime purchase of ₦1,000 successfull</div>
+                        <div>Nov 20, 2023 8:55Am</div>
+                      </div>
+                      <div className={styles.notificationContainer}>
+                        <div className={styles.notImage}>
+                          <Image 
+                            src="/images/services/phone.svg"
+                            width={15}
+                            height={15}
+                            />
+                        </div>
+                        <div className={styles.notificationContent}>Airtime purchase of ₦1,000 successfull</div>
+                        <div>Nov 20, 2023 8:55Am</div>
+                      </div>
+                    </div>
+                    <div className={styles.notificationBtn}>
+                      <button>view more</button>
+                    </div>
+                  </div>
+                )
+              }
                 
               <div onClick={openProfile} className={styles.profile}>
                   <Image 
@@ -225,44 +293,45 @@ const DashboardNav = () =>{
                     />
               </div>
 
+              {
+                isVisible && (
+
+                  <div  className={styles.profileDropdown}>
+                    <div className={styles.profileDropdownContainer}>
+                      <div className={styles.profileDropdownImage}>
+                        <Image src="/profileDropdown/account.svg" width={13} height={13}/>
+                      </div>
+                      <div className={styles.profileDropdownContent}>
+                        Account
+                      </div>
+                    </div>
+                    <div className={styles.profileDropdownContainer}>
+                      <div className={styles.profileDropdownImage}>
+                        <Image src="/profileDropdown/settings.svg" width={13} height={13}/>
+                      </div>
+                      <div className={styles.profileDropdownContent}>
+                        Setting
+                      </div>
+                    </div>
+                    <div className={styles.profileDropdownContainer}>
+                      <div className={styles.profileDropdownImage}>
+                        <Image src="/profileDropdown/logout.svg" width={13} height={13}/>
+                      </div>
+                      <div className={styles.profileDropdownContent}>
+                        Logout
+                      </div>
+                    </div>
+                  </div>
+
+                )
+              }
+
               <div className={styles.toggleICon}>
                 <CiMenuFries/>
               </div>
 
             </div>
         </div>
-        {/* <div className={styles.mobileNav}>
-
-            <div onClick={openNotification} >
-                <Image
-                  src="/images/bell.svg"
-                  width={24}
-                  height={24}
-                  />
-            </div>
-            
-            <div className={styles.navlink}>
-                <Image 
-                  src="/images/home.svg"
-                  width={20}
-                  height={20}
-                  />
-                  <a>Dashboard</a>
-            </div>
-
-              
-            <div className={styles.navlink}>
-                <Image 
-                  src="/images/frame.svg"
-                  width={20}
-                  height={20}
-                  />
-                  <a>Transactions</a>
-            </div>
-
-             
-
-        </div> */}
       </div>
     </>
   )

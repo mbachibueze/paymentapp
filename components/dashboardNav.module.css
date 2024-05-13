@@ -5,10 +5,10 @@
   position: fixed;
   width: 100%;
   background-color: rgb(255, 255, 255);
+  z-index: 1001;
 }
 
 .navigation{
-  position: sticky;
   top: 0%;
   left: 0%;
   width: 60%;
@@ -75,6 +75,7 @@
   box-shadow: 0 0 5px gray;
 }
 
+
 .notificationContainer {
   display: flex;
   align-items: center;
@@ -103,9 +104,7 @@
 
 .notificationCol{
   position: relative;
-  /* height: 100px; */
   overflow-wrap: normal;
-  /* background-color: gray; */
 }
 
 .notificationContent{
@@ -194,7 +193,19 @@
   justify-content: center;
 }
 
-@media(max-width: 820px){
+
+@media(max-width:600px){
+  .notification{
+    background-color: white;
+    z-index: 4200;
+    width: 90vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 3.9%);
+  }
+}
+
+@media(max-width: 920px){
   .toggleBtn .profile{
     margin-top: -4px;
     padding: 0;
@@ -204,8 +215,19 @@
     font-size: 20px;
     font-weight: 900;
   }
+  .notification{
+    background-color: white;
+    z-index: 4200;
+    width: 60vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+  }
 
 }
-
-
+@media(max-width:600px){
+  .notification{
+    width: 90vw;
+  }
+}
 

@@ -9,7 +9,8 @@ import { FaPlus } from "react-icons/fa";
 
 
 import DashboardNav from "@components/dashboardNav";
-import Sample from "@components/sample";
+
+
 
 
 export default function Home() {
@@ -20,11 +21,8 @@ export default function Home() {
 
     <>
        <DashboardNav />
-       <Sample>
-        Help
-      </Sample>
       
-      <div className={styles.mainContainer}>
+      <div className={styles.maincontainer}>
         
         <div className={styles.container}>
 

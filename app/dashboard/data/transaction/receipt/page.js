@@ -17,7 +17,7 @@ export default function Home() {
           <div className={styles.profile}>
             <div className={styles.profileImg}>
                 <Image src="/images/receiptIcon.svg" width={121} height={121}/>
-                <p>Cable Tv payment Successful!</p>
+                <p>Data Purchase Successful</p>
             </div>
             <div className={styles.profileContent}>
               <div className={styles.purchaseDetails}>
@@ -35,11 +35,11 @@ export default function Home() {
                   </div>
                   <div className={styles.profileDetails}>
                     <p className={styles.detailMain}>Charges:</p>
-                    <p className={styles.detailContent}><FaNairaSign />0.00</p>
+                    <p className={styles.detailContent}>₦0.00</p>
                   </div>
                   <div className={styles.profileDetails}>
                     <p className={styles.detailMain}>Bundle:</p>
-                    <p className={styles.detailContent}> 1GB 7days for   <FaNairaSign />600</p>
+                    <p className={styles.detailContent}>1GB 7Days for ₦600 </p>
                   </div>
                 </div>
                 <div className={styles.downloadBtn}>

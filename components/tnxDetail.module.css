@@ -1,0 +1,147 @@
+/* .generalContainer{
+  display: none;
+} */
+
+.general{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  background-color: gray;
+  opacity: 60%;
+  z-index: 1002;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.transaction{
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1003;
+}
+
+
+.popUpHeader{
+  border-bottom: 1px solid rgb(219, 216, 216);
+  padding: 15px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.close{
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+
+.popUpBody{
+  margin: 0 40px;
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 300px;
+  padding-bottom: 30px;
+  width: 400px;
+}
+@media(max-width: 550px){
+  .popUpBody{
+    margin: 0;
+    margin: auto;
+    padding: 15px 25px;
+    padding-bottom: 35px;
+  }
+}
+
+
+.popUpCol{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #F4F4F6;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.popUpDetails{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+
+
+@media(max-width:550px){
+  .popUpDetails{
+    font-size: 10px;
+    gap: 50px;
+  }
+  .popUpHeader{
+    width: 300px;
+  }
+  .popUpBody{
+    width: 310px;
+  }
+  
+}
+
+@media(max-width:450px){
+  .profile{
+    padding: 30px;
+  }
+  .profileDetails{
+    font-size: 10px;
+    gap: 60px;
+  }
+  .profile{
+    gap: 40px;
+  }
+}
+
+.detailMain{
+  color: gray;
+}
+.tnxstatus{
+  color: red;
+}
+
+
+.downloadBtn{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #D17528;
+  border: 1px solid #D17528;
+  border-radius: 100px;
+  padding: 3px 0;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+}
+
+
+
